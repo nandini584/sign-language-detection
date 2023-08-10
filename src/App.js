@@ -6,19 +6,19 @@ import * as fp from "fingerpose";
 import victory from "./victory.png";
 import thumbs_up from "./thumbs_up.png";
 import A from './assets/A.png';
-// import B from './assets/B.png';
-// import E from './assets/E.png';
-// import S from './assets/S.png';
-// import Q from './assets/Q.png';
+import B from './assets/B.png';
+import E from './assets/E.png';
+import S from './assets/S.png';
+import Q from './assets/Q.png';
 import U from './assets/A.png';
-// import U from './assets/u.png';
-// import V from './assets/v.png';
-// import W from './assets/w.png';
+import U from './assets/u.png';
+import V from './assets/v.png';
+import W from './assets/w.png';
 import {AlphaA} from './Signlanguage/AlphaA';
-// import {AlphaB} from './Signlanguage/AlphaB';
-// import {AlphaE} from './Signlanguage/AlphaE';
-// import {AlphaS} from './Signlanguage/AlphaS';
-// import {AlphaQ} from './Signlanguage/AlphaQ';
+import {AlphaB} from './Signlanguage/AlphaB';
+import {AlphaE} from './Signlanguage/AlphaE';
+import {AlphaS} from './Signlanguage/AlphaS';
+import {AlphaQ} from './Signlanguage/AlphaQ';
 import {AlphaU} from './Signlanguage/AlphaU';
 import {AlphaV} from './Signlanguage/AlphaV';
 import {AlphaW} from './Signlanguage/AlphaW';
@@ -29,7 +29,7 @@ function App() {
   const canvasRef = useRef(null);
 
   const [emoji, setEmoji] = useState(null);
-  const images = { AlphaA: A, AlphaU: U, thumbs_up: thumbs_up, victory: victory, AlphaV: V, AlphaW: W };
+  const images = { AlphaA: A, AlphaU: U, thumbs_up: thumbs_up, victory: victory, AlphaV: V, AlphaW: W, AlphaB: B, AlphaE: E, AlphaS: S, AlphaQ: Q };
 
    const runhandpose=async()=>{
      const net = await handpose.load();
@@ -59,10 +59,10 @@ function App() {
           AlphaU,
           AlphaV,
           AlphaW,
-          // AlphaB,
-          // AlphaE,
-          // AlphaS,
-          // AlphaQ,
+          AlphaB,
+          AlphaE,
+          AlphaS,
+          AlphaQ,
         ])
 
 
