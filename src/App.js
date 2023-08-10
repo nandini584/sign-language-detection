@@ -10,10 +10,9 @@ import B from './assets/B.png';
 import E from './assets/E.png';
 import S from './assets/S.png';
 import Q from './assets/Q.png';
-import U from './assets/A.png';
-import U from './assets/u.png';
-import V from './assets/v.png';
-import W from './assets/w.png';
+import U from './assets/U.png';
+import V from './assets/V.png';
+import W from './assets/W.png';
 import {AlphaA} from './Signlanguage/AlphaA';
 import {AlphaB} from './Signlanguage/AlphaB';
 import {AlphaE} from './Signlanguage/AlphaE';
@@ -75,8 +74,8 @@ function App() {
           const maxConfidence = confidence.indexOf(
             Math.max.apply(null, confidence)
           );
-          console.log(gesture.gestures[maxConfidence].name);
-          setEmoji(gesture.gestures[maxConfidence].name);
+          console.log(gesture.gestures[maxConfidence]);
+          setEmoji(gesture.gestures[maxConfidence]);
           console.log(emoji);
         }}
 
